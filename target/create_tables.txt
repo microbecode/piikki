@@ -1,0 +1,5 @@
+create table Users ( name varchar(50) NOT NULL UNIQUE, details varchar(100), discount boolean NOT NULL, balance double) 
+create table Purchases ( date Timestamp NOT NULL, name varchar(50) NOT NULL, product varchar(50) NOT NULL, price double NOT NULL) 
+create table Adminlog ( date Timestamp NOT NULL, action varchar(50) NOT NULL, actionValue varchar(50), target varchar(50) NOT NULL) 
+create table Products ( number int NOT NULL, name varchar(40) NOT NULL, price double NOT NULL)
+create table Stuff ( backup varchar(100), discount double);
